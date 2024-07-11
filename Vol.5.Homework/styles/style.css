@@ -1,0 +1,135 @@
+@font-face {
+    font-family: kartuli;
+    src: url(../fonts/alk-rex-bold.otf);
+}
+@font-face {
+    font-family: textka;
+    src: url(../fonts/gl-lortkipanidze-bold.ttf);
+}
+@font-face {
+    font-family: nino;
+    src: url(../fonts/bpg_nino_mtavruli_bold.otf);
+}
+@font-face {
+    font-family: asomtavruli;
+    src: url(../fonts/gugeshashvili_asomthavruli_1.ttf);
+}
+@font-face {
+    font-family: nusxuri;
+    src: url(../fonts/mt_mchedlidze_nushuri.ttf);
+}
+body{
+    width: 1080px;
+    height: 1780px;
+    border: solid 2px black;
+}
+#title{
+    font-family: "kartuli", serif;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(58, 50, 17);
+}
+.images1 img{
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    border-bottom: solid 2px rgb(58, 50, 17);
+    border-top: solid 2px rgb(58, 50, 17)
+    
+}
+.images1{
+    display: flex;
+    justify-content: space-around;
+}
+#text1{
+    padding: 5px;
+    font-family: "textka", serif;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+table{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+tr, td, th{
+border: dashed 3px rgb(58, 50, 17);
+}
+th{
+    background-color: rgb(1, 53, 102);
+    color: beige;
+    font-family: "kartuli", serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+#as{
+    font-family: "asomtavruli", serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+#nusx{
+    font-family: "nusxuri", serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    
+}
+#mxed{
+    font-family: "nino", serif;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+}
+td{
+    background-color: burlywood;
+}
+#text2{
+    text-align: left;
+    padding: 15px;
+    font-family: "nino", serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+label{
+    padding: 10px;
+    font-family: "nino", serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    color: white;
+}
+#tellus{
+    padding: 12px;
+    padding-bottom: 10px;
+    padding-right: 300px;
+    border-radius: 10px;
+}
+#send1{
+    padding: 10px;
+    font-family: "nino", serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    background-color: rgb(40, 145, 101);
+    border-radius: 15px;
+    color: white;
+}
+#send1:hover{
+    background-color: rgb(52, 194, 135);
+}
+.foot1{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: aquamarine;
+}
