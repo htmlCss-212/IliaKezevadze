@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 2200px;
+    position: absolute;
+    left: 50px;
+
+}
+.head1{
+    width: 1280px;
+    height: 70px;
+    background-color: #243E6D ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}.head1 a{
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+}
+.head1 a:hover{
+    background-color: #398492;
+    text-shadow: 3px 3px 10px white;
+    font-size: 34px;
+}
+.fa-magnifying-glass{
+    color:  #243E6D;
+    font-size: 24px;
+}
+.fa-magnifying-glass:hover{
+    color: white;
+}
+#inp{
+    padding: 20px 100px;
+    position: relative;
+    right: 20px;
+}
+#inp:hover{
+    background-color: #243d6dc7;
+}
+#inp:focus{
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+    background-color: #243E6D
+}
+#bu1{
+    width: 100px;
+    height: 60px;
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+.search{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#bu1:hover{
+    background-color: #243E6D;
+    color:aliceblue;
+}
+.text1{
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    padding: 10px;
+    width: 800px;
+}
+.text1div{
+    display: flex;
+    justify-content: center;
+}
+.laptop table tr th{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    background-color: #243E6D;
+    color: antiquewhite;
+}
+.laptop table tr td{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    border-bottom: solid 2px #243E6D ;
+    padding: 5px 10px ;
+    text-align: center;
+}
+.laptop table{
+    border-collapse: collapse;
+    width: 800px;
+    margin-top: 10px;
+}
+.laptop tr td:hover{
+    background-color: #398492;
+    color: antiquewhite;
+    cursor: pointer;
+}
+.laptopwrapper{
+    display: flex;
+    justify-content: center;
+}
+.laptop1 tr th{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    background-color: #5B588E;
+    color: antiquewhite;
+}
+.laptop1 tr td{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    border-bottom: solid 2px #5B588E ;
+    padding: 5px 10px ;
+    text-align: center;
+}
+.laptop1{
+    border-collapse: collapse;
+    width: 800px;
+}
+.laptop1 tr td:hover{
+    font-size: 32px;
+    cursor: pointer;
+    color: #7080AA;
+}
+.laptopwrapper1{
+    display: flex;
+    justify-content: center;
+}
+.pic img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.pic img:hover{
+    cursor: pointer;
+}
+.textcomm{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+
+}
+
+.inp1 input{
+    padding: 100px 250px;
+    border-radius: 15px;
+    position: absolute;
+    right: 50px;
+    bottom: 170px;
+}
+.inp1 input:hover{
+    background-color: #3985922c;
+}
+.inp1 #green{
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    padding: 20px 70px;
+    border-radius: 8px;
+    background-color: #52A422;
+    color: antiquewhite;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    border: none;
+}
+.inp1 #red{
+    padding: 20px 70px;
+    border-radius: 8px;
+    background-color: #a42222;
+    color: antiquewhite;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+}
+#red:hover{
+    background-color: #e43030;
+    cursor: pointer;
+}
+#green:hover{
+    background-color: #6ed830;
+    cursor: pointer;
+}
+.inputwrapper{
+    border-top: #243E6D 4px solid;
+    margin-top: 40px;
+    width: 800px;
+    height: 600px;
+    align-items: center;
+    position: relative;
+}
+.displaywrapper{
+    display: flex;
+    justify-content: center;
+}
+.stars{
+    color: gold;
+    position: absolute;
+    left: 200px;
+    top:100px
+    
+}
+.stars i{
+    font-size: 28px;
+}
+.stars i:hover{
+    color: #398492;
+    cursor: pointer;
+}
+.media{
+    width: 110px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.media span{
+    display: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #398492;
+    background-color: #fafafc;
+    text-align: center;
+}
+.media i:hover + span{
+    display: flex;
+}
+.media i{
+    color: #fafafc;
+    font-size: 32px;
+    text-align: center;
+}
+.mediawrapper{
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    background-color: #243E6D;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.foottext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+
+}
+.foottext span{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #fafafc;
+}
+.foottext1 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    color: #fafafc;
+}
+.foottext1 input{
+    padding: 10px 80px;
+}
+.foottext1 button{
+    border: solid 3px white;
+    padding: 20px 50px;
+    color: #fafafc;
+    background-color: #243E6D;
+    border-radius: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+}
+.foottext1 button:hover{
+    background-color: #fafafc;
+    color: #243E6D;
+}
+.foottext1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.foottext2 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    color: #fafafc;
+}
+.footwrapper{
+    background-color: #243E6D;
+    width: 1280px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
