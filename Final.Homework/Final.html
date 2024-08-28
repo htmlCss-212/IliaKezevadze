@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Corner</title>
+    <link rel="stylesheet" href="styles/finalStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logoSegment">
+        <img
+          id="logoimg"
+          src="images/logo.case.transparentAsset 1.png"
+          alt="logo is here"
+        />
+        <h3 id="logotext">Find Your Case Here</h3>
+        <div class="menuhide">
+          <i class="fa-solid fa-bars" onclick="showSideBar()"></i>
+        </div>
+      </div>
+      <div class="navwrapper">
+        <ul class="sideBar">
+          <li onclick="hideSidebar()"><i class="fa-solid fa-x"></i></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#prod">Products</a></li>
+          <li><a href="#contactH">Contact</a></li>
+          <li><a href="#aboutH">About Us</a></li>
+          <li onclick="Showlogin()"><a href="#login">Login</a></li>
+        </ul>
+        <nav class="navbar">
+          <ul>
+            <li class="hideNav"><a href="#">Home</a></li>
+            <li class="hideNav"><a href="#prod">Products</a></li>
+            <li class="hideNav"><a href="#contactH">Contact</a></li>
+            <li class="hideNav"><a href="#aboutH">About Us</a></li>
+            <li onclick="Showlogin()" class="hideNav">
+              <a href="#login">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <form class="login">
+        <h1 id="loginH">Login</h1>
+        <div class="loginput">
+          <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            required
+            onkeydown="emailValidator()"
+          />
+        </div>
+        <p id="emailres"></p>
+        <br />
+        <div class="passinput">
+          <input
+            onkeydown="passwordValidator()"
+            id="password"
+            type="password"
+            placeholder="Paswword"
+            required
+          />
+        </div>
+        <p id="res"></p>
+        <br />
+        <div class="logbox">
+          <label><input id="remember" type="checkbox" />Remember Me</label>
+          <a href="#">Forgot a password?</a>
+        </div>
+        <br /><br />
+        <div class="loginbtndiv">
+          <button id="loginbtn" type="submit">Login</button>
+        </div>
+        <br />
+        <div class="register">
+          <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+        <br />
+        <p id="getback" onclick="hideLogin()">Get Back to Home</p>
+      </form>
+      <div class="headerimg">
+        <img
+          id="bcgrimg"
+          src="images/elegant-smartphone-composition.jpg"
+          alt=""
+        />
+        <div class="casecorner">CASE CORNER</div>
+      </div>
+    </header>
+    <main>
+      <h3 id="newd">NEW DESIGNS</h3>
+      <div class="designwrapper">
+        <div class="design">
+          <div class="designimg">
+            <img src="images/newcase1.2.jpg" alt="" />
+          </div>
+          <div class="designtxt">
+            <h5 id="desName">7K Leather Case</h5>
+            <p id="desdescr">
+              Our <strong>NEW</strong> line in iphone cases. Comes in for all
+              devices from ip X and above. Strong and Traditional leather design
+              for confident looks. Preorder now and save 20%!
+            </p>
+            <button id="desbtn">Preorder for 30$</button>
+          </div>
+        </div>
+        <div class="design">
+          <div class="designimg">
+            <img src="images/newcase2.2.jpg" alt="" />
+          </div>
+          <div class="designtxt">
+            <h5 id="desName">Noir Black</h5>
+            <p id="desdescr">
+              Our <strong>NEW</strong> line in iphone cases. Comes in for all
+              devices from ip X and above. Black, rough design sure will tell a
+              lot about your charachter. Preorder now and save 20%!
+            </p>
+            <button id="desbtn">Preorder for 25$</button>
+          </div>
+        </div>
+      </div>
+      <button id="totop"><i class="fa-solid fa-angles-up"></i></button>
+      <h3 id="newd">THE MOST POPULAR</h3>
+      <div class="designPop">
+        <div class="designimg">
+          <img src="images/popcase1.jpg" alt="" />
+        </div>
+        <div class="designtxt">
+          <h5 id="desName">Dark Wonderer</h5>
+          <p id="desdescr">
+            Our the <strong>MOST</strong> popular case right now! Comes in for
+            all devices from ip X and above. Made for people who loves going
+            outside. Very dubable and stylish.
+          </p>
+          <button id="desbtn">Preorder for 25$</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="explore">
+          EPXLORE MORE <i class="fa-solid fa-arrow-down"></i>
+        </button>
+        <div class="dropmenu">
+          <a href="#prod">Cases</a>
+          <a href="">Accessories</a>
+          <a href="">Merch</a>
+          <a href="">Other</a>
+        </div>
+      </div>
+      <div class="linewrapper">
+        <div class="line1"></div>
+        <h3 id="prod">CASES</h3>
+        <div class="line1"></div>
+      </div>
+      <div class="casewrapper">
+        <div class="cases">
+          <img id="gridimg" src="images/webi1.png" alt="" />
+          <p id="gridname">Python Path</p>
+          <strong id="gridprice">40 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase2.png" alt="" />
+          <p id="gridname">Purple Glow</p>
+          <strong id="gridprice">30 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase3.png" alt="" />
+          <p id="gridname">Urban Love</p>
+          <strong id="gridprice">45 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase4.png" alt="" />
+          <p id="gridname">Rainbow Dream</p>
+          <strong id="gridprice">40 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase5.png" alt="" />
+          <p id="gridname">Fragile Goods</p>
+          <strong id="gridprice">60 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase6.png" alt="" />
+          <p id="gridname">Cherry Picnic</p>
+          <strong id="gridprice">55 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase7.png" alt="" />
+          <p id="gridname">Tigerskin</p>
+          <strong id="gridprice">70 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase8.png" alt="" />
+          <p id="gridname">Retro Shot</p>
+          <strong id="gridprice">70 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase9.png" alt="" />
+          <p id="gridname">Extra Pink</p>
+          <strong id="gridprice">65 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase10.png" alt="" />
+          <p id="gridname">Shell Show</p>
+          <strong id="gridprice">45 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase11.png" alt="" />
+          <p id="gridname">Ocean Dream</p>
+          <strong id="gridprice">50 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+        <div class="cases">
+          <img id="gridimg" src="images/ipcase12.png" alt="" />
+          <p id="gridname">Two Face</p>
+          <strong id="gridprice">35 $</strong>
+          <button id="gridbtn">
+            Buy Now <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="linewrapper">
+        <div class="line1"></div>
+        <h3 id="prod">HOW TO CHOOSE</h3>
+        <div class="line1"></div>
+      </div>
+      <div class="articlewrapper">
+        <div class="articleimg">
+          <img src="images/ipcase9.png" alt="" />
+        </div>
+        <div class="articlediv">
+          <article class="howto">
+            <h2 id="howtoH">Match your case with your lifestyle</h2>
+            <p id="howtoP">
+              If you are kind of person who enjoys outside walks, camping,
+              climbing and etc. what you need is durable case. So if bear
+              charges you can stuck your iphone between bear's jaws and be sure
+              our Extra Durable cases will do it's job. Explore new places with
+              new case.
+            </p>
+          </article>
+          <article class="howto">
+            <h2 id="howtoH">Make your priorities</h2>
+            <p id="howtoP">
+              We already discuss durable cases. If you spent a lot time in a car
+              or just love simple things, go with cases that are compatible with
+              wireless charging. Same goes with Magsafe. So think a bit and
+              decide what you need the most.
+            </p>
+          </article>
+          <article class="howto">
+            <h2 id="howtoH">Jack of all trades</h2>
+            <p id="howtoP">
+              By spending little bit more, you can choose case that comes with
+              all the benefits. Durability, stylish design and compatibility.
+              Unlike us humans, our cases really can be good at everything, but
+              in this case we have to charge you more. So you have to think
+              about your life choices.
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="linewrapper">
+        <div class="line1"></div>
+        <h3 id="prod">REVIEWS</h3>
+        <div class="line1"></div>
+      </div>
+      <div class="slider">
+        <div class="slides">
+          <p class="slide">
+            Those Abstract designs are so dope! I just bought one with "confused
+            cat" on it, it's so funny and I swap it with my colorful one when I
+            have those "confused" days
+          </p>
+          <p class="slide">
+            I went for extra durable case and even so it's bit expensive, I
+            can't be more satisfied. Durable cases I had before all were very
+            bulky without any decent styling. But now I finally have some nice
+            paintings on my case without a worry.
+          </p>
+          <p class="slide">
+            100% Recommended! feels really comfy in hand and very cool as well.
+            Worth every penny.
+          </p>
+          <p class="slide">Quality is the key here. Decent as advertised!</p>
+          <p class="slide">
+            I just love it! I just bought ip14 Pro and that Retro Shot design
+            case is the vibe I was looking for.
+          </p>
+        </div>
+        <button class="prev" onclick="prevSlide()">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+        <button class="next" onclick="nextSlide()">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </div>
+      <div class="linewrapper">
+        <div class="line1"></div>
+        <h3 id="prod">LEAVE YOR REVIEW</h3>
+        <div class="line1"></div>
+      </div>
+      <div class="leaveR">
+        <h3 id="leaveH">
+          Your opinion is very important for us. Tell us What you think
+        </h3>
+        <textarea name="reviewtxt" id="revtxt" rows="7" cols="120">
+          Type here...</textarea
+        >
+
+        <button id="leaveB" onclick="thanks()">Submit</button>
+      </div>
+      <div class="linewrapper">
+        <div class="line1"></div>
+        <h3 id="prod">ABOUT US</h3>
+        <div class="line1"></div>
+      </div>
+      <div class="aboutwrapper">
+        <div class="aboutdiv">
+          <h2 id="aboutH">Proudly going forward since 2018</h2>
+          <p id="aboutP">
+            We are a small and friendly company that always strives to make your
+            iPhone cases look as good as possible. We are here to help you
+            choose the perfect case for your iPhone. We are always looking for
+            new and exciting designs to keep you in love with our products.
+          </p>
+          <div class="aboutimg">
+            <img src="images/case.prod.jpg" alt="" />
+          </div>
+        </div>
+        <div class="aboutstore">
+          <h2 id="storeH">Our Stores Located In Four Different Cities</h2>
+          <p id="storeP">
+            Our Base Store is located in Kutaisi. We have total 3 stores located
+            here. We also cover Zugdidi, Vani and Rustavi with single store in
+            each cities. We plan to grow our locations and start selling from
+            Batumi and Tbilisi as well.
+          </p>
+          <div class="storeimg">
+            <img src="images/case.store.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="linewrapper">
+        <div class="line1"></div>
+        <h3 id="prod">CONTACT</h3>
+        <div class="line1"></div>
+      </div>
+      <div class="contactwrapper">
+        <div class="contactdiv">
+          <h2 id="contactH">Contact Us</h2>
+          <p id="contactP">
+            If you have any questions, concerns, or need assistance with your
+            iPhone case, please don't hesitate to reach out to us. We are here
+            to help.
+          </p>
+          <ul class="list1">
+            <li>
+              <i class="fa-solid fa-map-marker-alt"></i> 123 Main St, Anytown,
+              USA
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +1 123-456-7890</li>
+            <li><i class="fa-solid fa-envelope"></i> support@example.com</li>
+          </ul>
+        </div>
+        <div class="map">
+          <h3 id="mapH">Visit Our Largest Store</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.733398190953!2d42.6683046759258!3d42.26286557120205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8d04d2ed981d%3A0xd1e942446f36741b!2sCarrefour!5e0!3m2!1sen!2sge!4v1724668104616!5m2!1sen!2sge"
+            max-width="600"
+            max-height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="socMedia">
+          <h2 id="socMediaH">Social Media</h2>
+          <p id="socmediaP">Reach out to us, on our social media platforms!</p>
+          <ul class="list2">
+            <li>
+              <a href="https://www.fb.com/profile.php?id=100063883881625"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.x.com/id=casecorner"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/case___corner/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/final.js"></script>
+  </body>
+</html>
